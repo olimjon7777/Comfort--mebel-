@@ -6,270 +6,283 @@
 <title>Comfort Mebel Samarqand</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:Arial, sans-serif;
-  background:#0b0b0b;
-  color:#fff;
+font-family:Arial,sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.6
 }
 
 header{
-  background:#111;
-  border-bottom:1px solid #b89445;
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:100;
+background:#111;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #c6a34a
 }
 
 .logo{
-  font-size:24px;
-  font-weight:bold;
-  color:#d6b15c;
+font-size:25px;
+font-weight:bold;
+color:#d6b45c
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
+color:white;
+text-decoration:none;
+margin-left:20px
+}
+
+nav a:hover{
+color:#d6b45c
 }
 
 .hero{
-  min-height:500px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:60px 20px;
-  background:
-  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-  url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85")
-  center/cover;
+min-height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:
+linear-gradient(#0009,#0009),
+url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80")
+center/cover
 }
 
 .hero h1{
-  font-size:52px;
-  color:#d6b15c;
-  margin-bottom:15px;
+font-size:55px;
+margin-bottom:15px;
+color:#e0bd62
 }
 
 .hero p{
-  font-size:20px;
-  margin-bottom:25px;
+font-size:20px;
+margin-bottom:15px
 }
 
 .btn{
-  display:inline-block;
-  padding:12px 20px;
-  background:#d6b15c;
-  color:#111;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  border:none;
-  cursor:pointer;
+display:inline-block;
+background:#d6b45c;
+color:#111;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+border:none;
+cursor:pointer
 }
 
 .btn:hover{
-  background:#f0ce7a;
+background:#f0d57e
 }
 
 section{
-  padding:55px 6%;
+padding:60px 7%
 }
 
 .title{
-  text-align:center;
-  margin-bottom:30px;
+text-align:center;
+font-size:35px;
+color:#d6b45c;
+margin-bottom:35px
 }
 
-.title h2{
-  font-size:32px;
-  color:#d6b15c;
+.filters{
+text-align:center;
+margin-bottom:30px
 }
 
-.controls{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-bottom:30px;
+.filters button{
+background:#191919;
+color:#fff;
+border:1px solid #555;
+padding:10px 18px;
+margin:5px;
+border-radius:7px;
+cursor:pointer
+}
+
+.filters button:hover{
+background:#d6b45c;
+color:#111
 }
 
 .search{
-  width:280px;
-  padding:13px;
-  border-radius:8px;
-  border:1px solid #555;
-  background:#181818;
-  color:#fff;
+display:block;
+width:100%;
+max-width:500px;
+margin:0 auto 30px;
+padding:14px;
+border-radius:8px;
+border:none
 }
 
-.filter{
-  padding:12px 18px;
-  border-radius:8px;
-  border:1px solid #d6b15c;
-  background:#111;
-  color:#fff;
-  cursor:pointer;
-}
-
-.filter.active{
-  background:#d6b15c;
-  color:#111;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
 }
 
 .card{
-  background:#151515;
-  border:1px solid #292929;
-  border-radius:12px;
-  overflow:hidden;
-  transition:.3s;
+background:#151515;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #292929;
+transition:.3s
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  border-color:#d6b15c;
+transform:translateY(-6px);
+border-color:#d6b45c
 }
 
 .card img{
-  width:100%;
-  height:230px;
-  object-fit:cover;
-  cursor:pointer;
+width:100%;
+height:220px;
+object-fit:cover;
+cursor:pointer
 }
 
 .card-content{
-  padding:16px;
+padding:20px
 }
 
 .card h3{
-  margin-bottom:8px;
+color:#d6b45c;
+margin-bottom:8px
 }
 
-.category{
-  color:#d6b15c;
-  font-size:14px;
-  margin-bottom:12px;
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px
 }
 
-.card .btn{
-  width:100%;
-  text-align:center;
+.feature{
+background:#151515;
+padding:25px;
+border-radius:12px;
+text-align:center
 }
 
-.about{
-  background:#111;
-  text-align:center;
+.feature h3{
+color:#d6b45c;
+margin-bottom:10px
 }
 
-.about p{
-  max-width:800px;
-  margin:auto;
-  line-height:1.8;
-  color:#ccc;
+.order{
+max-width:700px;
+margin:auto;
+background:#151515;
+padding:30px;
+border-radius:15px
+}
+
+.order input,
+.order select,
+.order textarea{
+width:100%;
+padding:14px;
+margin:8px 0;
+border-radius:7px;
+border:none
+}
+
+.order textarea{
+height:120px
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px
+}
+
+.review{
+background:#151515;
+padding:25px;
+border-radius:12px
+}
+
+.stars{
+color:#e0bd62
 }
 
 .contact{
-  text-align:center;
+text-align:center;
+background:#111
 }
 
-.contact-box{
-  max-width:600px;
-  margin:auto;
-  background:#151515;
-  padding:30px;
-  border-radius:15px;
-  border:1px solid #333;
+.contact p{
+margin:10px;
+font-size:18px
 }
 
-.contact-box p{
-  margin:15px 0;
-  font-size:18px;
+.map{
+width:100%;
+height:350px;
+border:0;
+margin-top:25px;
+border-radius:12px
 }
 
 footer{
-  background:#080808;
-  text-align:center;
-  padding:25px;
-  color:#aaa;
-  border-top:1px solid #292929;
+background:#050505;
+text-align:center;
+padding:25px;
+color:#aaa
 }
 
 .modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.9);
-  z-index:999;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
+display:none;
+position:fixed;
+z-index:100;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:#000d;
+align-items:center;
+justify-content:center
 }
 
 .modal img{
-  max-width:95%;
-  max-height:90%;
-  border-radius:10px;
+max-width:90%;
+max-height:85%;
+border-radius:10px
 }
 
 .close{
-  position:absolute;
-  top:20px;
-  right:30px;
-  font-size:40px;
-  cursor:pointer;
-  color:white;
-}
-
-@media(max-width:1000px){
-  .grid{
-    grid-template-columns:repeat(3,1fr);
-  }
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+cursor:pointer;
+color:white
 }
 
 @media(max-width:700px){
-  header{
-    flex-direction:column;
-    gap:12px;
-  }
 
-  nav a{
-    margin:0 7px;
-    font-size:14px;
-  }
-
-  .hero h1{
-    font-size:36px;
-  }
-
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+.hero h1{
+font-size:38px
 }
 
-@media(max-width:480px){
-  .grid{
-    grid-template-columns:1fr;
-  }
+nav{
+display:none
+}
 
-  .hero{
-    min-height:430px;
-  }
+section{
+padding:45px 5%
+}
+
 }
 </style>
 </head>
@@ -277,524 +290,689 @@ footer{
 <body>
 
 <header>
-  <div class="logo">COMFORT MEBEL</div>
 
-  <nav>
-    <a href="#catalog">Katalog</a>
-    <a href="#about">Biz haqimizda</a>
-    <a href="#contact">Aloqa</a>
-  </nav>
+<div class="logo">
+COMFORT MEBEL
+</div>
+
+<nav>
+<a href="#home">Bosh sahifa</a>
+<a href="#catalog">Katalog</a>
+<a href="#order">Buyurtma</a>
+<a href="#contact">Aloqa</a>
+</nav>
+
 </header>
 
-<section class="hero">
-  <div>
-    <h1>Comfort Mebel</h1>
-    <p>Samarqanddagi zamonaviy va sifatli mebellar</p>
-    <a class="btn" href="#catalog">Katalogni ko‘rish</a>
-  </div>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Comfort Mebel Samarqand</h1>
+
+<p>Zamonaviy va sifatli mebellar</p>
+
+<p>O‘zingiz xohlagan mebelni ham yasab beramiz!</p>
+
+<a class="btn" href="#catalog">
+Katalogni ko‘rish
+</a>
+
+<a class="btn" href="#order">
+Buyurtma berish
+</a>
+
+</div>
+
 </section>
+
 
 <section id="catalog">
 
-  <div class="title">
-    <h2>Bizning katalog</h2>
-    <p style="color:#aaa;margin-top:10px;">
-      O‘zingizga yoqqan modelni tanlang va narxini so‘rang
-    </p>
-  </div>
+<h2 class="title">
+Bizning katalog
+</h2>
 
-  <div class="controls">
+<input
+class="search"
+id="search"
+placeholder="Mebel qidirish..."
+onkeyup="searchProducts()"
+>
 
-    <input
-      id="search"
-      class="search"
-      type="text"
-      placeholder="🔎 Mebel qidirish..."
-      onkeyup="render()"
-    >
+<div class="filters">
 
-    <button class="filter active" onclick="setFilter('all',this)">
-      Barchasi
-    </button>
+<button onclick="filterProducts('all')">
+Barchasi
+</button>
 
-    <button class="filter" onclick="setFilter('kitchen',this)">
-      Oshxona
-    </button>
+<button onclick="filterProducts('kitchen')">
+Oshxona
+</button>
 
-    <button class="filter" onclick="setFilter('sofa',this)">
-      Yumshoq mebel
-    </button>
+<button onclick="filterProducts('sofa')">
+Divan
+</button>
 
-    <button class="filter" onclick="setFilter('bedroom',this)">
-      Yotoqxona
-    </button>
+<button onclick="filterProducts('bedroom')">
+Yotoqxona
+</button>
 
-    <button class="filter" onclick="setFilter('wardrobe',this)">
-      Shkaf
-    </button>
+<button onclick="filterProducts('wardrobe')">
+Shkaf
+</button>
 
-  </div>
+</div>
 
-  <div class="grid" id="catalogGrid"></div>
+
+<div class="products">
+
+
+<!-- 1 -->
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Zamonaviy oshxona</h3>
+
+<p>
+Minimalist va zamonaviy dizayn.
+</p>
+
+</div>
+</div>
+
+
+<!-- 2 -->
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Premium oshxona</h3>
+
+<p>
+Premium ko‘rinish va qulay yechim.
+</p>
+
+</div>
+</div>
+
+
+<!-- 3 -->
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Luxury oshxona</h3>
+
+<p>
+Uy uchun chiroyli va zamonaviy oshxona.
+</p>
+
+</div>
+</div>
+
+
+<!-- 4 -->
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Oq rangli oshxona</h3>
+
+<p>
+Yorqin va keng ko‘rinish beruvchi dizayn.
+</p>
+
+</div>
+</div>
+
+
+<!-- 5 -->
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Modern oshxona</h3>
+
+<p>
+Zamonaviy uylar uchun ajoyib variant.
+</p>
+
+</div>
+</div>
+
+
+<!-- 6 -->
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Premium divan</h3>
+
+<p>
+Qulay va zamonaviy yumshoq mebel.
+</p>
+
+</div>
+</div>
+
+
+<!-- 7 -->
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Mehmonxona divani</h3>
+
+<p>
+Mehmonxona uchun zamonaviy yechim.
+</p>
+
+</div>
+</div>
+
+
+<!-- 8 -->
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Elegant divan</h3>
+
+<p>
+Chiroyli dizayn va qulaylik.
+</p>
+
+</div>
+</div>
+
+
+<!-- 9 -->
+
+<div class="card" data-category="bedroom">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Premium yotoqxona</h3>
+
+<p>
+Yotoqxona uchun to‘liq zamonaviy yechim.
+</p>
+
+</div>
+</div>
+
+
+<!-- 10 -->
+
+<div class="card" data-category="bedroom">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Modern yotoq</h3>
+
+<p>
+Sodda va chiroyli yotoqxona dizayni.
+</p>
+
+</div>
+</div>
+
+
+<!-- 11 -->
+
+<div class="card" data-category="bedroom">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Luxury yotoqxona</h3>
+
+<p>
+Premium uslubdagi yotoqxona.
+</p>
+
+</div>
+</div>
+
+
+<!-- 12 -->
+
+<div class="card" data-category="wardrobe">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Premium shkaf</h3>
+
+<p>
+O‘lchamingizga mos qilib tayyorlaymiz.
+</p>
+
+</div>
+</div>
+
+
+<!-- 13 -->
+
+<div class="card" data-category="wardrobe">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Zamonaviy shkaf</h3>
+
+<p>
+Uy uchun qulay va chiroyli shkaf.
+</p>
+
+</div>
+</div>
+
+
+<!-- 14 -->
+
+<div class="card" data-category="wardrobe">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Sliding shkaf</h3>
+
+<p>
+Zamonaviy va joyni tejaydigan dizayn.
+</p>
+
+</div>
+</div>
+
+
+<!-- 15 -->
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>Luxury yumshoq mebel</h3>
+
+<p>
+Premium interyer uchun chiroyli tanlov.
+</p>
+
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="title">
+Nega aynan biz?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>✓ Sifat</h3>
+<p>
+Sifatli materiallardan foydalanamiz.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Individual dizayn</h3>
+<p>
+O‘lchamingiz va xohishingiz bo‘yicha.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Zamonaviy</h3>
+<p>
+Trenddagi zamonaviy dizaynlar.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Yetkazib berish</h3>
+<p>
+Kelishilgan manzilga yetkazib beramiz.
+</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="order">
+
+<h2 class="title">
+Buyurtma berish
+</h2>
+
+<div class="order">
+
+<input
+id="name"
+placeholder="Ismingiz"
+>
+
+<input
+id="phone"
+placeholder="Telefon raqamingiz"
+>
+
+<select id="type">
+
+<option>Oshxona</option>
+<option>Divan</option>
+<option>Yotoqxona</option>
+<option>Shkaf</option>
+<option>Boshqa</option>
+
+</select>
+
+<input
+id="size"
+placeholder="O‘lchami, masalan: 3 x 3 metr"
+>
+
+<textarea
+id="message"
+placeholder="Mebel haqida qo‘shimcha ma'lumot..."
+></textarea>
+
+<button
+class="btn"
+onclick="sendOrder()"
+>
+Telegram orqali buyurtma
+</button>
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="title">
+Mijozlar fikri
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Mebel juda chiroyli va sifatli chiqdi.”
+</p>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“O‘lchamimizga mos qilib tayyorlab berishdi.”
+</p>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Xizmat va dizayn juda yoqdi.”
+</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2 class="title">
+Biz bilan bog‘laning
+</h2>
+
+<p>
+📍 Samarqand
+</p>
+
+<p>
+📞 +998 88 977 44 55
+</p>
+
+<p>
+📱 Telegram: @Comfort_Mebel_samarqand
+</p>
+
+<a
+class="btn"
+href="tel:+998889774455"
+>
+📞 Telefon qilish
+</a>
+
+<a
+class="btn"
+href="https://t.me/Comfort_Mebel_samarqand"
+target="_blank"
+>
+📱 Telegram
+</a>
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Samarqand%20Uzbekistan&output=embed">
+</iframe>
 
 </section>
 
-<section id="about" class="about">
-
-  <div class="title">
-    <h2>Comfort Mebel Samarqand</h2>
-  </div>
-
-  <p>
-    Biz zamonaviy uylar uchun oshxona mebellari,
-    yumshoq mebellar, yotoqxona va shkaflar tayyorlaymiz.
-    Dizayn, sifat va mijozga qulaylik — bizning asosiy maqsadimiz.
-  </p>
-
-</section>
-
-<section id="contact" class="contact">
-
-  <div class="title">
-    <h2>Biz bilan bog‘laning</h2>
-  </div>
-
-  <div class="contact-box">
-
-    <p>📞 <b>+998 88 977 44 55</b></p>
-
-    <p>
-      Telegram:
-      <b>@Comfort_Mebel_samarqand</b>
-    </p>
-
-    <br>
-
-    <a
-      class="btn"
-      href="https://t.me/Comfort_Mebel_samarqand"
-      target="_blank"
-    >
-      📩 Telegram orqali yozish
-    </a>
-
-    <br><br>
-
-    <a
-      class="btn"
-      href="tel:+998889774455"
-    >
-      📞 Telefon qilish
-    </a>
-
-  </div>
-
-</section>
 
 <footer>
-  © 2026 Comfort Mebel Samarqand — Barcha huquqlar himoyalangan.
+
+© 2026 Comfort Mebel Samarqand.
+Barcha huquqlar himoyalangan.
+
 </footer>
 
-<div class="modal" id="modal" onclick="closeModal()">
-  <span class="close">×</span>
-  <img id="modalImg">
+
+<div
+class="modal"
+id="modal"
+onclick="closeModal()"
+>
+
+<span class="close">
+×
+</span>
+
+<img id="modalImg">
+
 </div>
+
 
 <script>
 
-let currentFilter = "all";
+function filterProducts(category){
 
-const telegram = "https://t.me/Comfort_Mebel_samarqand";
+let cards=document.querySelectorAll(".card");
 
-const products = [
+cards.forEach(card=>{
 
-/* ===== OSHXONA ===== */
+if(
+category==="all" ||
+card.dataset.category===category
+){
 
-{
-name:"Premium oq oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
-},
+card.style.display="block";
 
-{
-name:"Modern qora oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=80"
-},
+}else{
 
-{
-name:"Minimalist oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Luxury oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Yorqin oq oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Yog‘och rang oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta oilaviy oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Qora oltin oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Klassik modern oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta zamonaviy oshxona",
-category:"kitchen",
-cat:"Oshxona",
-img:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
-},
-
-/* ===== YUMSHOQ MEBEL ===== */
-
-{
-name:"Premium divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Modern kulrang divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1550226891-ef816aed4a98?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Luxury yumshoq divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta burchak divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Minimalist divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Oilaviy burchak",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Yumshoq kreslo",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Premium mehmonxona",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Zamonaviy divan",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Elegant yumshoq mebel",
-category:"sofa",
-cat:"Yumshoq mebel",
-img:"https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=80"
-},
-
-/* ===== YOTOQXONA ===== */
-
-{
-name:"Premium yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Modern yotoq",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Luxury yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Oq yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Minimal yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Yog‘och dizayn yotoq",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Zamonaviy yotoq komplekti",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1617325710236-7a1e9f4b0e4a?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Premium qora yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1615874959474-870e5c1b8b3e?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Bej rang yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta yotoqxona",
-category:"bedroom",
-cat:"Yotoqxona",
-img:"https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=80"
-},
-
-/* ===== SHKAF ===== */
-
-{
-name:"Premium kiyim shkafi",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Oq shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Sliding shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta kiyim shkafi",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Minimalist shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Yotoqxona shkafi",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Premium qora shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Zamonaviy shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Katta sliding shkaf",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80"
-},
-
-{
-name:"Luxury garderob",
-category:"wardrobe",
-cat:"Shkaf",
-img:"https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=80"
-}
-
-];
-
-function render(){
-
-  const grid = document.getElementById("catalogGrid");
-
-  const search =
-    document.getElementById("search").value.toLowerCase();
-
-  const filtered = products.filter(product => {
-
-    const filterOK =
-      currentFilter === "all" ||
-      product.category === currentFilter;
-
-    const searchOK =
-      product.name.toLowerCase().includes(search);
-
-    return filterOK && searchOK;
-
-  });
-
-  grid.innerHTML = filtered.map(product => {
-
-    const message =
-      encodeURIComponent(
-        "Salom, " +
-        product.name +
-        " modeli haqida narx va ma'lumot olmoqchiman."
-      );
-
-    return `
-
-      <div class="card">
-
-        <img
-          src="${product.img}"
-          alt="${product.name}"
-          onclick="openModal('${product.img}')"
-          loading="lazy"
-        >
-
-        <div class="card-content">
-
-          <div class="category">
-            ${product.cat}
-          </div>
-
-          <h3>
-            ${product.name}
-          </h3>
-
-          <a
-            class="btn"
-            href="${telegram}?text=${message}"
-            target="_blank"
-          >
-            📩 Narxini so‘rash
-          </a>
-
-        </div>
-
-      </div>
-
-    `;
-
-  }).join("");
+card.style.display="none";
 
 }
 
-function setFilter(filter, button){
-
-  currentFilter = filter;
-
-  document
-    .querySelectorAll(".filter")
-    .forEach(btn => btn.classList.remove("active"));
-
-  button.classList.add("active");
-
-  render();
+});
 
 }
+
+
+function searchProducts(){
+
+let text=document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let title=card
+.querySelector("h3")
+.innerText
+.toLowerCase();
+
+if(title.includes(text)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
 
 function openModal(src){
 
-  document.getElementById("modalImg").src = src;
+document.getElementById("modalImg").src=src;
 
-  document.getElementById("modal").style.display = "flex";
+document.getElementById("modal").style.display="flex";
 
 }
+
 
 function closeModal(){
 
-  document.getElementById("modal").style.display = "none";
+document.getElementById("modal").style.display="none";
 
 }
 
-render();
+
+function sendOrder(){
+
+let name=document.getElementById("name").value;
+
+let phone=document.getElementById("phone").value;
+
+let type=document.getElementById("type").value;
+
+let size=document.getElementById("size").value;
+
+let message=document.getElementById("message").value;
+
+let text=
+"YANGI BUYURTMA%0A%0A"+
+"Ism: "+encodeURIComponent(name)+
+"%0ATelefon: "+encodeURIComponent(phone)+
+"%0AMebel: "+encodeURIComponent(type)+
+"%0AO‘lcham: "+encodeURIComponent(size)+
+"%0AIzoh: "+encodeURIComponent(message);
+
+window.open(
+"https://t.me/Comfort_Mebel_samarqand?text="+text,
+"_blank"
+);
+
+}
 
 </script>
 
