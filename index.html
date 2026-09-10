@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comfort Mebel Samarqand</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Arial,sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.6
+}
+
+header{
+background:#111;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #c6a34a
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#d6b45c
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px
+}
+
+nav a:hover{
+color:#d6b45c
+}
+
+.hero{
+min-height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:
+linear-gradient(#0009,#0009),
+url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80")
+center/cover
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+color:#e0bd62
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:15px
+}
+
+.btn{
+display:inline-block;
+background:#d6b45c;
+color:#111;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+border:none;
+cursor:pointer
+}
+
+.btn:hover{
+background:#f0d57e
+}
+
+section{
+padding:60px 7%
+}
+
+.title{
+text-align:center;
+font-size:35px;
+color:#d6b45c;
+margin-bottom:35px
+}
+
+.filters{
+text-align:center;
+margin-bottom:30px
+}
+
+.filters button{
+background:#191919;
+color:#fff;
+border:1px solid #555;
+padding:10px 18px;
+margin:5px;
+border-radius:7px;
+cursor:pointer
+}
+
+.filters button:hover{
+background:#d6b45c;
+color:#111
+}
+
+.search{
+display:block;
+width:100%;
+max-width:500px;
+margin:0 auto 30px;
+padding:14px;
+border-radius:8px;
+border:none
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+
+.card{
+background:#151515;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #292929;
+transition:.3s
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#d6b45c
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+cursor:pointer
+}
+
+.card-content{
+padding:20px
+}
+
+.card h3{
+color:#d6b45c;
+margin-bottom:8px
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+margin:12px 0
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px
+}
+
+.feature{
+background:#151515;
+padding:25px;
+border-radius:12px;
+text-align:center
+}
+
+.feature h3{
+color:#d6b45c;
+margin-bottom:10px
+}
+
+.order{
+max-width:700px;
+margin:auto;
+background:#151515;
+padding:30px;
+border-radius:15px
+}
+
+.order input,
+.order select,
+.order textarea{
+width:100%;
+padding:14px;
+margin:8px 0;
+border-radius:7px;
+border:none
+}
+
+.order textarea{
+height:120px
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px
+}
+
+.review{
+background:#151515;
+padding:25px;
+border-radius:12px
+}
+
+.stars{
+color:#e0bd62
+}
+
+.contact{
+text-align:center;
+background:#111
+}
+
+.contact p{
+margin:10px;
+font-size:18px
+}
+
+.map{
+width:100%;
+height:350px;
+border:0;
+margin-top:25px;
+border-radius:12px
+}
+
+footer{
+background:#050505;
+text-align:center;
+padding:25px;
+color:#aaa
+}
+
+.modal{
+display:none;
+position:fixed;
+z-index:100;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:#000d;
+align-items:center;
+justify-content:center
+}
+
+.modal img{
+max-width:90%;
+max-height:85%;
+border-radius:10px
+}
+
+.close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+cursor:pointer;
+color:white
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:38px
+}
+
+nav{
+display:none
+}
+
+section{
+padding:45px 5%
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+COMFORT MEBEL
+</div>
+
+<nav>
+<a href="#home">Bosh sahifa</a>
+<a href="#catalog">Katalog</a>
+<a href="#order">Buyurtma</a>
+<a href="#contact">Aloqa</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Comfort Mebel Samarqand</h1>
+
+<p>Zamonaviy va sifatli mebellar</p>
+
+<p>O‘zingiz xohlagan mebelni ham yasab beramiz!</p>
+
+<a class="btn" href="#catalog">
+Katalogni ko‘rish
+</a>
+
+<a class="btn" href="#order">
+Buyurtma berish
+</a>
+
+</div>
+
+</section>
+
+
+<section id="catalog">
+
+<h2 class="title">
+Bizning katalog
+</h2>
+
+<input
+class="search"
+id="search"
+placeholder="Mebel qidirish..."
+onkeyup="searchProducts()"
+>
+
+<div class="filters">
+
+<button onclick="filterProducts('all')">
+Barchasi
+</button>
+
+<button onclick="filterProducts('kitchen')">
+Oshxona
+</button>
+
+<button onclick="filterProducts('sofa')">
+Divan
+</button>
+
+<button onclick="filterProducts('bedroom')">
+Yotoqxona
+</button>
+
+<button onclick="filterProducts('wardrobe')">
+Shkaf
+</button>
+
+</div>
+
+
+<div class="products">
+
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Zamonaviy oshxona
+</h3>
+
+<p>
+O‘lcham va dizayn bo‘yicha tayyorlaymiz.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Yumshoq divan
+</h3>
+
+<p>
+Qulay va zamonaviy dizayn.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+
+<div class="card" data-category="bedroom">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Yotoqxona
+</h3>
+
+<p>
+Yotoqxona uchun zamonaviy mebellar.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+
+<div class="card" data-category="wardrobe">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Kiyim shkafi
+</h3>
+
+<p>
+O‘lchamingizga mos qilib tayyorlaymiz.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+
+<div class="card" data-category="kitchen">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Premium oshxona
+</h3>
+
+<p>
+Premium material va zamonaviy ko‘rinish.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+
+<div class="card" data-category="sofa">
+
+<img
+onclick="openModal(this.src)"
+src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80"
+>
+
+<div class="card-content">
+
+<h3>
+Mehmonxona mebellari
+</h3>
+
+<p>
+Uy uchun qulay va chiroyli yechimlar.
+</p>
+
+<div class="price">
+Narxi kelishiladi
+</div>
+
+<a class="btn" href="#order">
+Buyurtma
+</a>
+
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="title">
+Nega aynan biz?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>✓ Sifat</h3>
+<p>
+Sifatli materiallardan foydalanamiz.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Individual dizayn</h3>
+<p>
+O‘lchamingiz va xohishingiz bo‘yicha.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Zamonaviy</h3>
+<p>
+Trenddagi zamonaviy dizaynlar.
+</p>
+</div>
+
+<div class="feature">
+<h3>✓ Yetkazib berish</h3>
+<p>
+Kelishilgan manzilga yetkazib beramiz.
+</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="order">
+
+<h2 class="title">
+Buyurtma berish
+</h2>
+
+<div class="order">
+
+<input
+id="name"
+placeholder="Ismingiz"
+>
+
+<input
+id="phone"
+placeholder="Telefon raqamingiz"
+>
+
+<select id="type">
+
+<option>Oshxona</option>
+<option>Divan</option>
+<option>Yotoqxona</option>
+<option>Shkaf</option>
+<option>Boshqa</option>
+
+</select>
+
+<input
+id="size"
+placeholder="O‘lchami, masalan: 3 x 3 metr"
+>
+
+<textarea
+id="message"
+placeholder="Mebel haqida qo‘shimcha ma'lumot..."
+></textarea>
+
+<button
+class="btn"
+onclick="sendOrder()"
+>
+Telegram orqali buyurtma
+</button>
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="title">
+Mijozlar fikri
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Mebel juda chiroyli va sifatli chiqdi.”
+</p>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“O‘lchamimizga mos qilib tayyorlab berishdi.”
+</p>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Xizmat va dizayn juda yoqdi.”
+</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2 class="title">
+Biz bilan bog‘laning
+</h2>
+
+<p>
+📍 Samarqand
+</p>
+
+<p>
+📞 +998 88 977 44 55
+</p>
+
+<p>
+📱 Telegram: @Comfort_Mebel_samarqand
+</p>
+
+<a
+class="btn"
+href="tel:+998889774455"
+>
+📞 Telefon qilish
+</a>
+
+<a
+class="btn"
+href="https://t.me/Comfort_Mebel_samarqand"
+target="_blank"
+>
+📱 Telegram
+</a>
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Samarqand%20Uzbekistan&output=embed">
+</iframe>
+
+</section>
+
+
+<footer>
+
+© 2026 Comfort Mebel Samarqand.
+Barcha huquqlar himoyalangan.
+
+</footer>
+
+
+<div
+class="modal"
+id="modal"
+onclick="closeModal()"
+>
+
+<span class="close">
+×
+</span>
+
+<img id="modalImg">
+
+</div>
+
+
+<script>
+
+function filterProducts(category){
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+if(
+category==="all" ||
+card.dataset.category===category
+){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+
+function searchProducts(){
+
+let text=document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let title=card
+.querySelector("h3")
+.innerText
+.toLowerCase();
+
+if(title.includes(text)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+
+function openModal(src){
+
+document.getElementById("modalImg").src=src;
+
+document.getElementById("modal").style.display="flex";
+
+}
+
+
+function closeModal(){
+
+document.getElementById("modal").style.display="none";
+
+}
+
+
+function sendOrder(){
+
+let name=document.getElementById("name").value;
+
+let phone=document.getElementById("phone").value;
+
+let type=document.getElementById("type").value;
+
+let size=document.getElementById("size").value;
+
+let message=document.getElementById("message").value;
+
+let text=
+"YANGI BUYURTMA%0A%0A"+
+"Ism: "+encodeURIComponent(name)+
+"%0ATelefon: "+encodeURIComponent(phone)+
+"%0AMebel: "+encodeURIComponent(type)+
+"%0AO‘lcham: "+encodeURIComponent(size)+
+"%0AIzoh: "+encodeURIComponent(message);
+
+window.open(
+"https://t.me/Comfort_Mebel_samarqand?text="+text,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
